@@ -1,0 +1,47 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+.container {
+	max-width: 300px;
+	margin: 30px auto;
+	text-align: center;
+}
+
+input {
+	padding: 7px;
+	margin: 2px;
+}
+
+table, input[type=text] {
+	width: 100%;
+}
+
+input[type=submit] {
+	margin: 0px;
+	cursor: pointer;
+	font-weight: 600;
+}
+
+input[type=submit]:hover {
+	background-color: black;
+	border-color: black;
+	color: white;
+}
+
+h2, table {
+	margin-bottom: 10px;
+}
+
+.error {
+	background-color: #ffa8a8;;
+	color: red;
+	padding: 10px;
+}
+
+.success {
+	background-color: #6cfd6c;;
+	color: green;
+	padding: 10px;
+}
