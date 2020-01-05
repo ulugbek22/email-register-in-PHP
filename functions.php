@@ -1,6 +1,8 @@
 <?php
 
-function add_the_user($user, $filename = 'users.php')
+define('FILE_NAME', 'users.php');
+
+function add_the_user($user, $filename = FILE_NAME)
 {
 	$data = trim($user['name']) . " - " . trim($user['email']) . "\n";
 	file_put_contents($filename, $data, FILE_APPEND);
@@ -19,4 +21,14 @@ function old($name)
 		if (isset($user['email']) && $name == 'email') return $user['email'];
 	}
 	else return '';
+}
+
+function get_users($filename = FILE_NAME)
+{
+	$users = [];
+	$raw_users = file($filename);
+	foreach ($raw_users as $user) {
+		$users[] = explode(' - ', htmlspecialchars($user));
+	}
+	return $users;
 }

@@ -4,7 +4,7 @@
 	padding: 0px;
 }
 .container {
-	max-width: 300px;
+	max-width: 350px;
 	margin: 30px auto;
 	text-align: center;
 }
@@ -44,4 +44,12 @@ h2, table {
 	background-color: #6cfd6c;;
 	color: green;
 	padding: 10px;
+}
+
+.text-left {
+	text-align: left!important;
+}
+
+.mailing-list tr td {
+	padding: 7px;
 }
